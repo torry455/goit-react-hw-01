@@ -1,7 +1,7 @@
 import Profile from "./components/Profile/profile/Profile";
 import userData from "./components/Profile/profile/profile.json";
 
-import friend from "./components/friendsList/friend.json";
+import friends from "./components/friendsList/friend.json";
 import FriendList from "./components/friendsList/FriendList";
 
 import transactions from "./components/TransactionHistory/transactions.json";
@@ -19,7 +19,7 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList friend={friend} />
+      <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
     </div>
   );
